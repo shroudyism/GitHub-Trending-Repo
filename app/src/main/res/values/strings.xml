@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">Trending</string>
+    <string name="app_name">         Trending</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_trending_list">TrendingList</string>
+    <string name="title_activity_no_network">NoNetwork</string>
 </resources>
