@@ -1,7 +1,9 @@
 package com.example.shroudyism.gojekassignment
 
-class model (author : String , name : String , avatar : String , url : String ,
-             description : String , stars : Long , forks : Long , currentPeriodStars : Long , builtBy : Array<User>){
+
+data class ListItems(var author : String , var name :  String ,var avatar : String ,var  url : String ,
+                var description : String , var stars : Long , var forks : Long ,var  currentPeriodStars : Long ,
+                var builtBy : Array<User>) {
 
 }
 
