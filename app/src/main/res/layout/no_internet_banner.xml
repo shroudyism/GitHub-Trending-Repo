@@ -48,6 +48,7 @@
         android:id="@+id/btn_retry"
         android:text="Retry"
         android:textColor="#31B057"
+        android:onClick="sendMessage"
         android:textSize="15dp"
         android:background="@drawable/btn_rounded_boundary"
         app:layout_constraintLeft_toLeftOf="parent"

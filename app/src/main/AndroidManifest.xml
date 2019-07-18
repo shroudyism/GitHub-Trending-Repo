@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name="com.example.shroudyism.trendingGitHub.ui.MainActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +23,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TrendingList"
-            android:label="@string/title_activity_trending_list"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".NoNetwork"
+            android:name="com.example.shroudyism.trendingGitHub.ui.NoNetwork"
             android:label="@string/title_activity_no_network"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="com.example.shroudyism.trendingGitHub.utils.AlarmReceiver"/>
+        <receiver android:name="com.example.shroudyism.trendingGitHub.utils.BootCompletedIntentReceiver"/>
     </application>
 
 </manifest>

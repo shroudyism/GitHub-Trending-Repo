@@ -5,4 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_trending_list">TrendingList</string>
     <string name="title_activity_no_network">NoNetwork</string>
+    <string name="title_activity_main_hor">MainActivityHor</string>
+    <string name="trending_cache_key">TrendingList</string>
 </resources>
